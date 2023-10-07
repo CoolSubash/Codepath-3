@@ -1,0 +1,50 @@
+
+
+
+.events-heading{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 4rem;
+    cursor: pointer;
+    color: rgb(33, 53, 238);
+    font-weight: bold;
+}
+
+.events-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    width: 98%;
+    margin: 30px auto;
+
+}
+
+.event-card{
+    
+    box-shadow:0 0px 1px 0px rgba(0,0,0,0.4);
+    background-color: red;
+   
+}
+.event-image{
+    width: 100%;
+    object-fit: cover;
+}
+.event-title{
+    text-align: center;
+    font-size: 38px;
+    margin: 10px 0px;
+    font-weight: bold;
+    color: cornflowerblue;
+}
+.event-ticket-price{
+    color: rgb(57, 14, 14);
+    text-align: center;
+}
+.event-read{
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    justify-content:center;
+    padding: 8px;
+   
+}

@@ -1,0 +1,71 @@
+/* src/components/Navbar.css */
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#landing-page{
+    background-image: url('https://html.cwsthemes.com/aconte/assets/images/parallax8.jpg');
+    
+   background-repeat: no-repeat;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    /* Change this to your desired background color */
+  }
+  
+  .logo img {
+    width: 300px;
+   
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-right: 20px;
+  }
+  
+  a {
+    font-size: 20px;
+    padding-left: 30px;
+    text-decoration: none;
+    color: #ffffff; /* Change this to your desired link color */
+  }
+
+  a:hover{
+    color: aqua;
+  }
+  .landing-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+  }
+
+  .landing-heading h1 {
+    font-size: 7rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    animation: heartbeat 1s infinite;
+  }
+  
+  @keyframes heartbeat {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  
