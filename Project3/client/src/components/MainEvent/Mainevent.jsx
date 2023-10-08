@@ -9,7 +9,7 @@ const MainEventPage = () => {
         'https://images.pexels.com/photos/70441/pexels-photo-70441.jpeg?auto=compress&cs=tinysrgb&w=600',
     },
     {
-      name: 'Marriott',
+      name: 'Marriot',
       placeImage:
         'https://images.pexels.com/photos/1838640/pexels-photo-1838640.jpeg?auto=compress&cs=tinysrgb&w=600',
     },

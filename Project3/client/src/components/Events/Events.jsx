@@ -12,7 +12,9 @@ const Events = () => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await fetch('http://localhost:5631/eventplace/Marriot')
+        const response = await fetch(
+          `http://localhost:5631/eventplace/${params.id}`,
+        )
         if (!response.ok) {
           throw new Error('Network response was not ok')
         }
@@ -36,19 +38,18 @@ const Events = () => {
   return (
     <div className="events">
       <h1 className="events-heading">Events</h1>
-      {eventsByPlace.map((place, index) => (
-        <div className="events-list" key={index}>
-          {place.events.map((event, eventIndex) => (
-            <Event
-              key={eventIndex}
-              image={event.image}
-              title={event.title}
-              ticketPrice={event.ticketPrice}
-              eventId={event.id} // Event ID is index + 1
-            />
-          ))}
-        </div>
-      ))}
+
+      <div className="events-list">
+        {eventsByPlace.map((event, eventIndex) => (
+          <Event
+            key={eventIndex}
+            image={event.event_image}
+            title={event.event_title}
+            ticketPrice={event.ticket_price}
+            eventId={event.id} // Event ID is index + 1
+          />
+        ))}
+      </div>
     </div>
   )
 }

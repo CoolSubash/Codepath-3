@@ -7,7 +7,6 @@ const getEventsBydetails = async (req, res) => {
       values: [req.params.id],
     }
     const result = await pool.query(query)
-
     return res.json(result.rows)
   } catch (error) {
     console.error('Error fetching events:', error)
